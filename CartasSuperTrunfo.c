@@ -1,22 +1,46 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    //Declarando as variaveis
+    // Sinal de igual a qualquer número para remover lixo da memória
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    int codigo=01;
+    char nome[20];
+    int populacao=02;
+    float area=03;
+    float pib=04;
+    int pontos=05;
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Solicitar comando do usuario
+    printf("Digite o código do país\n");
 
+    //Armazenamento das informaçoes
+    scanf("%d", &codigo);
+
+    printf("Digite o nome do país\n");
+    scanf("%s", &nome);
+
+    printf("Digite a população:\n");
+    scanf("%d", &populacao);
+
+    printf("Digite a area do país:\n");
+    scanf("%f", &area);
+
+    printf("Digite o pib do país:\n");
+    scanf("%f", &pib);
+
+    printf("Digite a quantidade de pontos turisticos:\n");
+    scanf("%d", &pontos);
+    
+    // Exportando as informações
+    //n é para separar as frases
+    printf("O código do país é: %d\n", codigo);
+    printf("O nome do país é: %s\n", nome);
+    printf("A população é de: %d\n", populacao);
+    printf("A área é de: %f\n", area);
+    printf("O PIB é: %f\n", pib);
+    printf("O número de pontos turísticos é de: %d\n", pontos);
+    
+    
     return 0;
 }
